@@ -30,5 +30,8 @@ public class FirstClass{
             String thirdYearYear=thirdYear.checkIfYearIsLeap();
             System.out.println(thirdYearYear);
 
+            LeapYear fourthYear=new LeapYear(1998);
+            String fourthYearYear=fourthYear.checkIfYearIsLeap();
+            System.out.println(fourthYearYear);
         }
     }
