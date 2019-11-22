@@ -18,20 +18,8 @@ public class FirstClass{
             oldNotebook.checkWeight();
             oldNotebook.checkYearAndPrice();
 
-            LeapYear firstYear=new LeapYear(2019);
-            String firstYearYear=firstYear.checkIfYearIsLeap();
-            System.out.println(firstYearYear);
-
-            LeapYear secondYear=new LeapYear(2000);
-            String secondYearYear=secondYear.checkIfYearIsLeap();
-            System.out.println(secondYearYear);
-
-            LeapYear thirdYear=new LeapYear(2012);
-            String thirdYearYear=thirdYear.checkIfYearIsLeap();
-            System.out.println(thirdYearYear);
-
-            LeapYear fourthYear=new LeapYear(1998);
-            String fourthYearYear=fourthYear.checkIfYearIsLeap();
-            System.out.println(fourthYearYear);
+            LeapYear example=new LeapYear(2019);
+            String exampleYear=example.checkIfYearIsLeap();
+            System.out.println(exampleYear);
         }
     }
