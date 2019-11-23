@@ -1,21 +1,19 @@
 public class UserTest {
     public static void main(String[] args){
 
-        User example=new User(String name, int year);
-        int[] years = new int[]{42, 18, 32, 24};
-        int i = example.calculateYearsSumAndReturnAverage(years);
-        System.out.println(i);
+        User[] users=new User[]{"userOne","userTwo","userThree","userFour"};
+
 
         User userOne=new User("Kasia",42);
         System.out.println(userOne.getName()+userOne.getYear());
 
         User userTwo=new User("Krystian",18);
-        System.out.println(userTwo.name+userTwo.year);
+        System.out.println(userTwo.getName()+userTwo.getYear());
 
         User userThree=new User("Michał",32);
-        System.out.println(userThree.name+userThree.year);
+        System.out.println(userThree.getName()+userThree.getYear());
 
         User userFour=new User("Aneta",24);
-        System.out.println(userFour.name+userFour.year);
+        System.out.println(userFour.getName()+userFour.getYear());
     }
 }

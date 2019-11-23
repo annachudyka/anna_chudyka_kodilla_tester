@@ -3,25 +3,30 @@ public class User {
     int year;
 
     public User(String name, int year){
-        this.name=name;
-        this.year=year;
+        this.name = name;
+        this.year = year;
     }
-
-    public int calculateYearsSumAndReturnAverage(int[]years){
-        float sum = 0;
-        for (int i = 0; i < years.length; i++) {
-            sum += years[i];
+    public String calculateYearsSumAndReturnAverage(User[]users){
+        int result=0;
+        for(int i=0; i<users.length; i++){
+            result+= users[i].getYear();
         }
-        sum /= years.length;
-        return (int) sum;
+        result /=users.length;
+        return (int) result;
     }
-    public String getName(){
+    public String getName(User[]users){
         return this.name;
     }
-    public int getYear(){
+    public int getYear(User[]users){
         return this.year;
     }
 }
+
+
+
+
+
+
 
 
 

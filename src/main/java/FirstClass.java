@@ -27,6 +27,8 @@ public class FirstClass{
             object.sumNumbers(numbers);
             System.out.println(object.sumNumbers(numbers));
 
+
+
         int i = 0;
         while (i <= 10) {
             System.out.println(i);
