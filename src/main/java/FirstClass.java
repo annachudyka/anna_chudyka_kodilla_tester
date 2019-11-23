@@ -21,5 +21,18 @@ public class FirstClass{
             LeapYear example=new LeapYear(2019);
             String exampleYear=example.checkIfYearIsLeap();
             System.out.println(exampleYear);
+
+            Loops object=new Loops();
+            int[]numbers=new int[]{12,3,45,7};
+            object.sumNumbers(numbers);
+            System.out.println(object.sumNumbers(numbers));
+
+        int i = 0;
+        while (i <= 10) {
+            System.out.println(i);
+            i++;
         }
+        }
+
+
     }

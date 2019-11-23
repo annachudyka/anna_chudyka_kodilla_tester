@@ -10,7 +10,7 @@ public class SimpleArray {
         String name=names[3];
         System.out.println(name);
 
-        for(int i=0; i<names.length; i++){
+        for(int i=0; i<names.length; i++) {
             System.out.println(names[i]);
         }
 
