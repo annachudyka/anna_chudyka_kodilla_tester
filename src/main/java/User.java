@@ -1,26 +1,43 @@
+import com.sun.org.apache.xpath.internal.operations.String;
+
 public class User {
     String name;
     int year;
 
-    public User(String name, int year){
+    public User(String name, int year) {
         this.name = name;
         this.year = year;
     }
-    public String calculateYearsSumAndReturnAverage(User[]users){
-        int result=0;
-        for(int i=0; i<users.length; i++){
-            result+= users[i].getYear();
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int calculateYearsSumAndReturnAverage(User[] users) {
+        int average = 0;
+        for (int i = 0; i < users.length; i++) {
+            average += users[i].getYear();
         }
-        result /=users.length;
-        return (int) result;
+        average /= users.length;
+        return average;
     }
-    public String getName(User[]users){
-        return this.name;
-    }
-    public int getYear(User[]users){
-        return this.year;
+
+    public void displayPersonNamesWhoHaveYearLessThanAverage(User[] users, int average) {
+
+        for (int j = 0; j < users.length; j++) {
+            if (users[j].getYear() < average) {
+                System.out.println(users[j].getName());
+            } else {
+                System.out.println("");
+            }
+        }
     }
 }
+
 
 
 

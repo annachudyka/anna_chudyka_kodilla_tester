@@ -1,9 +1,6 @@
 public class UserTest {
     public static void main(String[] args){
 
-        User[] users=new User[]{"userOne","userTwo","userThree","userFour"};
-
-
         User userOne=new User("Kasia",42);
         System.out.println(userOne.getName()+userOne.getYear());
 
@@ -15,5 +12,16 @@ public class UserTest {
 
         User userFour=new User("Aneta",24);
         System.out.println(userFour.getName()+userFour.getYear());
+
+        User[]users=new User[]{userOne,userTwo,userThree,userFour};
+
+        User object=new User("Adam",50);
+        object.calculateYearsSumAndReturnAverage(users);
+        System.out.println(object.calculateYearsSumAndReturnAverage(users));
+
+        User object1=new User("Krzysztf",5);
+        object1.displayPersonNamesWhoHaveYearLessThanAverage(users,int average);
+        System.out.println(object1.calculateYearsSumAndReturnAverage(users));
+
     }
 }
