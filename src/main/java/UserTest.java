@@ -19,9 +19,9 @@ public class UserTest {
         object.calculateYearsSumAndReturnAverage(users);
         System.out.println(object.calculateYearsSumAndReturnAverage(users));
 
-        User object1=new User("Krzysztf",5);
-        object1.displayPersonNamesWhoHaveYearLessThanAverage(users,int average);
-        System.out.println(object1.calculateYearsSumAndReturnAverage(users));
+        User object1=new User("Krzysztof",5);
+        object1.displayPersonNamesWhoHaveYearLessThanAverage(users,object.calculateYearsSumAndReturnAverage(users));
+        System.out.println(object1.displayPersonNamesWhoHaveYearLessThanAverage(users,object.calculateYearsSumAndReturnAverage(users)));
 
     }
 }

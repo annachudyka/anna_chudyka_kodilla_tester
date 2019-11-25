@@ -1,8 +1,7 @@
-import com.sun.org.apache.xpath.internal.operations.String;
-
 public class User {
     String name;
     int year;
+    int result;
 
     public User(String name, int year) {
         this.name = name;
@@ -25,6 +24,7 @@ public class User {
         average /= users.length;
         return average;
     }
+
 
     public void displayPersonNamesWhoHaveYearLessThanAverage(User[] users, int average) {
         for (int j = 0; j < users.length; j++) {
