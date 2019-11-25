@@ -27,7 +27,6 @@ public class User {
     }
 
     public void displayPersonNamesWhoHaveYearLessThanAverage(User[] users, int average) {
-
         for (int j = 0; j < users.length; j++) {
             if (users[j].getYear() < average) {
                 System.out.println(users[j].getName());
