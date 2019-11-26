@@ -18,10 +18,11 @@ public class UserTest {
         User object=new User("Adam",50);
         object.calculateYearsSumAndReturnAverage(users);
         System.out.println(object.calculateYearsSumAndReturnAverage(users));
+        int score=object.calculateYearsSumAndReturnAverage(users);
 
         User object1=new User("Krzysztof",5);
-        object1.displayPersonNamesWhoHaveYearLessThanAverage(users,object.calculateYearsSumAndReturnAverage(users));
-        System.out.println(object1.displayPersonNamesWhoHaveYearLessThanAverage(users,object.calculateYearsSumAndReturnAverage(users)));
+        object1.displayPersonNamesWhoHaveYearLessThanAverage(users,score);
+
 
     }
 }

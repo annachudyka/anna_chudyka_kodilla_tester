@@ -3,6 +3,7 @@ public class User {
     int year;
     int result;
 
+
     public User(String name, int year) {
         this.name = name;
         this.year = year;
@@ -23,6 +24,7 @@ public class User {
         }
         average /= users.length;
         return average;
+
     }
 
 
@@ -35,6 +37,7 @@ public class User {
             }
         }
     }
+
 }
 
 
