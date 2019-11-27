@@ -5,7 +5,6 @@ public class RandomNumbers {
 
 
     public int getNumber() {
-        this.number=getNumber();
         return number;
 
     }
