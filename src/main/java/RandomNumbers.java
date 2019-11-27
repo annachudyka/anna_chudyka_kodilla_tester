@@ -6,7 +6,6 @@ public class RandomNumbers {
 
     public int getNumber() {
         return number;
-
     }
     public int countRandomNumbers() {
 
