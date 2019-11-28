@@ -1,16 +1,33 @@
-public class LoopsPractice {
-    public static void main(String[] args){
-        int value=1;
-        while(value<15){
-            System.out.println(value);
-            value=value+1;
-        }
-        String case2="Exercise 2";
-        System.out.println(case2);
-        int i;
-        for(i=0;i<15;i++){
-            System.out.println(i+2);
-        }
+import java.util.Random;
 
+public class LoopsPractice {
+    public int countNumbers(int[] numbersOne) {
+        int result = 0;
+        int i;
+        for (i = 0; i < numbersOne.length; i++) {
+            result = result + numbersOne[i];
+        }
+        return result;
     }
+
+    public int getCountOfRandomNumber(int max){
+        Random random=new Random();
+
+        int result=0;
+        int sum=0;
+        while(sum<max){
+            int temp=random.nextInt(10);
+            sum=sum+temp;
+            result=result+1;
+        }
+        return result;
+    }
+
+
 }
+
+
+
+
+
+

@@ -53,7 +53,6 @@ public class RandomNumbers {
         }
         return max;
     }
-
 }
 
 
