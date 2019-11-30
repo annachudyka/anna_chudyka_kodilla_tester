@@ -7,10 +7,9 @@ public class Application {
 
         Convertible convertible=new Convertible(4,2);
         convertible.turnOnLights();
-        convertible.closeRoof();
         System.out.println(convertible.getSeats());
-
         convertible.displayNumberOfSeats();
+
 
 
     }
