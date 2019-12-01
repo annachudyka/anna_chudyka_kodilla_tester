@@ -9,14 +9,14 @@ public class Rectangle extends Shape {
 
     @Override
     public int calculateSurfaceArea() {
-        int surfaceRectangle=0;
+        int surfaceRectangle;
         surfaceRectangle=2*getA()+2*getB();
         return surfaceRectangle;
 
     }
     @Override
     public int calculatePerimeter() {
-        int perimeterRectangle=0;
+        int perimeterRectangle;
         perimeterRectangle=getA()*getB();
         return perimeterRectangle;
     }

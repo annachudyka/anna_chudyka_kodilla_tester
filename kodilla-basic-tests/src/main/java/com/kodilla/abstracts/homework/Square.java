@@ -8,14 +8,14 @@ public class Square extends Shape{
 
     @Override
     public int calculateSurfaceArea() {
-       int surfaceSquare=0;
+       int surfaceSquare;
        surfaceSquare=4*getA();
        return surfaceSquare;
     }
 
     @Override
     public int calculatePerimeter() {
-        int perimeterSquare=0;
+        int perimeterSquare;
         perimeterSquare=getA()*getA();
         return perimeterSquare;
 

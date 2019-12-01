@@ -21,10 +21,13 @@ public class Person {
         return age;
     }
 
+    public Job getJob() {
+        return job;
+    }
 
     public void displaySalaryAndResponsibilities() {
-        System.out.println("Salary: " + job.getSalary());
-        job.displayResponsibilities();
+        System.out.println("Salary: " + getJob().getSalary());
+        getJob().displayResponsibilities();
     }
 
     public static void main(String[] args) {

@@ -7,14 +7,14 @@ public class Triangle extends Shape {
 
     @Override
     public int calculateSurfaceArea() {
-        int surfaceTriangle=0;
+        int surfaceTriangle;
         surfaceTriangle=getA()+getH()+getB();
         return surfaceTriangle;
     }
 
     @Override
     public int calculatePerimeter() {
-        int perimeterTriangle=0;
+        int perimeterTriangle;
         perimeterTriangle=(getA()*getH())/2;
         return perimeterTriangle;
     }

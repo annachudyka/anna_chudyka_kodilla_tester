@@ -2,9 +2,9 @@ package com.kodilla.abstracts.homework;
 
 public abstract class Shape {
 
-    private int A=6;
-    private int B=10;
-    private int H=8;
+    private int A;
+    private int B;
+    private int H;
 
     public Shape(int A, int B, int H){
         this.A=A;
