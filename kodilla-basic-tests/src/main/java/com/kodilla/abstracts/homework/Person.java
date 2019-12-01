@@ -21,13 +21,6 @@ public class Person {
         return age;
     }
 
-    public Job getJob() {
-        return job;
-    }
-
-    public void displayJob(){
-        System.out.println(getJob());
-    }
 
     public void displaySalaryAndResponsibilities() {
         System.out.println("Salary: " + job.getSalary());
@@ -40,7 +33,6 @@ public class Person {
         Person person1 = new Person("Noemi", 25, officeAssistance1);
 
 
-
         Job recruiter1 = new Recruiter();
         Person person2 = new Person("Magda", 24, recruiter1);
 
@@ -51,6 +43,8 @@ public class Person {
         System.out.println(person1.getAge());
         person1.displaySalaryAndResponsibilities();
 
+
+
         System.out.println(person2.getFirstName());
         System.out.println(person2.getAge());
         person2.displaySalaryAndResponsibilities();
@@ -59,6 +53,9 @@ public class Person {
         System.out.println(person3.getFirstName());
         System.out.println(person3.getAge());
         person3.displaySalaryAndResponsibilities();
+
+
+
 
     }
 }

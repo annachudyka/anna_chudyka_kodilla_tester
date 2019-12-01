@@ -19,5 +19,7 @@ public abstract class Job {
     public int getSalary(){
         return salary;
     }
+
+
 }
 
