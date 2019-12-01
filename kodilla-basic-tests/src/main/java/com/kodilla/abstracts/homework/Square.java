@@ -3,22 +3,20 @@ package com.kodilla.abstracts.homework;
 public class Square extends Shape{
 
     public Square() {
-        super(5, 10, 8);
+        super(6);
     }
 
     @Override
     public int calculateSurfaceArea() {
        int surfaceSquare=0;
-       int A=5;
-       surfaceSquare=4*A;
+       surfaceSquare=4*getA();
        return surfaceSquare;
     }
 
     @Override
     public int calculatePerimeter() {
         int perimeterSquare=0;
-        int A=5;
-        perimeterSquare=A*A;
+        perimeterSquare=getA()*getA();
         return perimeterSquare;
 
     }

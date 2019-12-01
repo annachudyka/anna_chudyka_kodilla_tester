@@ -4,25 +4,20 @@ public class Rectangle extends Shape {
 
 
     public Rectangle() {
-        super(6, 10, 8);
+        super(6, 10);
     }
 
     @Override
     public int calculateSurfaceArea() {
         int surfaceRectangle=0;
-        int A=6;
-        int B=10;
-        surfaceRectangle=2*A+2*B;
+        surfaceRectangle=2*getA()+2*getB();
         return surfaceRectangle;
 
     }
-
     @Override
     public int calculatePerimeter() {
         int perimeterRectangle=0;
-        int A=6;
-        int B=10;
-        perimeterRectangle=A*B;
+        perimeterRectangle=getA()*getB();
         return perimeterRectangle;
     }
 }
