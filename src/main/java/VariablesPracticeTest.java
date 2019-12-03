@@ -69,6 +69,12 @@ public class VariablesPracticeTest {
         int numberOfElements=friends.length;
         System.out.println("Moja tablica zawiera"+" "+numberOfElements+" "+"elementy");
 
+        double result=object.multiply(4.00,5.00);
+        System.out.println(result);
+
+
+
+
     }
 }
 

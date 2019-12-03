@@ -13,7 +13,6 @@ public class SimpleArray {
         for(int i=0; i<names.length; i++) {
             System.out.println(names[i]);
         }
-
         int numberOfElements=names.length;
         if(numberOfElements==5){
             System.out.println("My array has 5 elements");
