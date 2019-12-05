@@ -72,6 +72,17 @@ public class VariablesPracticeTest {
         double result=object.multiply(4.00,5.00);
         System.out.println(result);
 
+        String welcome="Nazywam się Amigo";
+        String agree="Zgadzam się na wynagrodzenie w wysokości ";
+        String money=" zł/miesiąc";
+        int number=10;
+        String grateful="Dziękuję za Twą hojność, mój przyjacielu Raszi";
+        System.out.println(welcome);
+        System.out.println(agree+number+money);
+        System.out.println(grateful);
+
+
+
 
 
 
