@@ -11,18 +11,6 @@ public class Bank {
 
         this.cashMachines = new CashMachine[]{cashMachine, cashMachine1, cashMachine2, cashMachine3};
     }
-    public void addTransactionToCashMachine(int transaction) {
-        this.cashMachines[0].add(transaction);
-    }
-    public void addTransactionToCashMachine1(int transaction) {
-        this.cashMachines[1].add(transaction);
-    }
-    public void addTransactionToCashMachine2(int transaction) {
-        this.cashMachines[2].add(transaction);
-    }
-    public void addTransactionToCashMachine3(int transaction) {
-        this.cashMachines[3].add(transaction);
-    }
     public int getTotalBalance() {
         int total = 0;
         int i;
@@ -30,6 +18,9 @@ public class Bank {
             total += cashMachines[i].getBalance();
         }
         return total;
+    }
+    public CashMachine[] getCashMachines(){
+        return cashMachines;
     }
     public double getAverageOfWithdrawal (CashMachine cashMachine) {
         if (cashMachine.getTransactions().length == 0) {

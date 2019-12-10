@@ -20,7 +20,7 @@ public class Grades {
         this.values=newTab;//przypisanie nowej tablicy newTab to tablicy przechowywanej w klasie
 
     }
-    public int[] getValues(){//getter aby dostać się do wartości ze zmiennej prywatnej
+    public int[] getValues() {//getter aby dostać się do wartości ze zmiennej prywatnej
         return values;
     }
     public double getAverage(){
