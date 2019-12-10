@@ -81,8 +81,16 @@ public class VariablesPracticeTest {
         System.out.println(agree+number+money);
         System.out.println(grateful);
 
+        System.out.print("Diego ");
+        System.out.println("jest najlepszy");
+        System.out.print("Amigo ");
+        System.out.print("jest najlepszy");
+        System.out.println(" I basta!");
 
-
+        String fruit="brzoskwinia ";
+        String fruit2="banan";
+        System.out.println(fruit);
+        System.out.print(fruit2);
 
 
 

@@ -9,11 +9,9 @@ public class CashMachine {
         this.transactions=new int[0];
         this.size=0;
     }
-
     public int[] getTransactions(){
         return transactions;
     }
-
     public void add(int transaction){
         this.size=size+1;
         int[]newTab=new int[this.size];
@@ -21,7 +19,6 @@ public class CashMachine {
         newTab[this.size-1]=transaction;
         this.transactions=newTab;
     }
-
     public int getBalance(){
         if(this.transactions.length==0){
             return 0;
@@ -33,5 +30,4 @@ public class CashMachine {
         }
         return balance;
     }
-
 }

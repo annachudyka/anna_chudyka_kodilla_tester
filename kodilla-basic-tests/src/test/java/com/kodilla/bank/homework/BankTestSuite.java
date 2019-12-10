@@ -10,11 +10,11 @@ public class BankTestSuite{
     public void shouldCalculateTotalBalance(){
 
         Bank bank =new Bank();
-        bank.getCashMachines(150);
-        bank.getCashMachines(-50);
-        bank.getCashMachines(50);
-        bank.getCashMachines(-150);
-        assertEquals(0,bank.getTotalBalance());
+        bank.addTransactionToCashMachine(150);
+        bank.addTransactionToCashMachine1(-50);
+        bank.addTransactionToCashMachine2(100);
+        bank.addTransactionToCashMachine3(-20);
+        assertEquals(180,bank.getTotalBalance());
     }
     @Test
     public void shouldCalculateAverageOfPayment(){
@@ -23,7 +23,7 @@ public class BankTestSuite{
         cashMachine.add(100);
         cashMachine.add(50);
         cashMachine.add((50));
-        assertEquals(66.67,bank.getAverageOfPayment(),0.01);
+        assertEquals(66.67,bank.getAverageOfPayment(cashMachine),0.01);
     }
     @Test
     public void shouldCalculateAverageOfWithdrawal(){
@@ -32,7 +32,7 @@ public class BankTestSuite{
         cashMachine.add(-100);
         cashMachine.add(-50);
         cashMachine.add(-200);
-        assertEquals(-116.67,bank.getAverageOfWithdrawal(),0.01);
+        assertEquals(-116.67,bank.getAverageOfWithdrawal(cashMachine),0.01);
     }
 
     @Test
@@ -43,7 +43,7 @@ public class BankTestSuite{
         cashMachine.add(100);
         cashMachine.add(50);
         int[]transactions=cashMachine.getTransactions();
-        assertEquals(3,bank.countNumberOfPayments());
+        assertEquals(3,bank.countNumberOfPayments(cashMachine));
     }
 
     @Test
@@ -53,7 +53,7 @@ public class BankTestSuite{
         cashMachine.add(-50);
         cashMachine.add(-50);
         int[]transactions=cashMachine.getTransactions();
-        assertEquals(2,bank.getAverageOfWithdrawal());
+        assertEquals(2,bank.countNumberOfWithdrawal(cashMachine));
     }
 
 

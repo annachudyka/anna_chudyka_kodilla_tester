@@ -3,7 +3,7 @@ package com.kodilla.school;
 public class Student {
 
     private String name;
-    private Grades math;
+    private Grades math;//odniesienie zmiennej math do obiektu typu Grades? Czy można by napisać Grades math=new Grades();?
     private Grades physics;
     private Grades geography;
     private Grades history;
@@ -16,7 +16,7 @@ public class Student {
         this.history=new Grades();
     }
     public void addMathGrade(int grade){
-        if(grade>00&&grade<7){
+        if(grade>0&&grade<7){
             this.math.add(grade);
         }
     }
@@ -46,6 +46,11 @@ public class Student {
     }
     public double getHistoryAverage(){
         return this.history.getAverage();
+    }
+    public double getAverage(){
+        double sum=this.geography.getAverage()+this.history.getAverage()+this.math.getAverage()+this.physics.getAverage();
+        return sum/4;
+
     }
 
 

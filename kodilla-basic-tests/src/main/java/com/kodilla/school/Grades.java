@@ -1,11 +1,11 @@
 package com.kodilla.school;
 
 public class Grades {
-    private int[]values;//zadeklarowana tablica z ocenami
+    private int[]values;//zadeklarowana tablica z ocenami, z zerową liczba elementów
     private int size;//wartość opisująca wielkość tablicy
 
-    public Grades(){
-        this.values=new int[0];//tablica z zerową liczbą elementów - nie ma jeszcze ocen
+    public Grades(){//konstruktor
+        this.values=new int[0];
         this.size=0;
     }
 
@@ -29,10 +29,10 @@ public class Grades {
         }
         double sum=0;
         int i;
-        for(i=0; i<values.length;i++){
+        for(i=0; i<this.values.length;i++){
             sum+=this.values[i];
         }
-        return sum/values.length;
+        return sum/this.values.length;
     }
 }
 
