@@ -8,7 +8,6 @@ import com.kodilla.collections.interfaces.homework.Suzuki;
 public class CarUtils {
 
     public static void describeCar(Car car){
-        System.out.println("-----------------------------");
         System.out.println("Car name: "+getCarName(car));
         System.out.println(car.getSpeed());
 

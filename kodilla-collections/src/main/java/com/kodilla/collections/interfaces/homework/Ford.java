@@ -2,6 +2,13 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car {
 
+    @Override
+    public String toString() {
+        return "Ford{" +
+                "speed=" + speed +
+                '}';
+    }
+
     private int speed;
 
     public Ford(int speed){
@@ -14,7 +21,8 @@ public class Ford implements Car {
     @Override
     public void increaseSpeed() {
         speed+=20;
-        System.out.println(this.speed);
+        System.out.println(this.speed);//metoda nic nie zwraca dlatego wyświetlamy poprzez odwołanie się
+        //do zmiennej klasy - speed
     }
     @Override
     public void decreaseSpeed() {

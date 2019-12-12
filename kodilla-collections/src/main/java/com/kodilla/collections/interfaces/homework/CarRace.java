@@ -14,7 +14,7 @@ public class CarRace {
         car.increaseSpeed();
         car.increaseSpeed();
         car.decreaseSpeed();
-        car.decreaseSpeed();
-        System.out.println(car.getSpeed());
+        car.decreaseSpeed();//tu system.out nie zadziała. Mamy typ void.
+        System.out.println(car.getSpeed());//możemy poprzez system.out bo to metoda return=do obiektu
     }
 }
