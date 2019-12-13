@@ -38,6 +38,12 @@ public class Solution {
         Solution solution2=new Solution(1234);
         System.out.println("This serial number is: "+solution2.toString());
 
+        String s="\"C:\\Program Files\\Java\\jdk1.8.0_172\\bin\"";
+        String s1="\"C:\\\\Program Files\\\\Java\\\\jdk1.8.0_172\\\\bin\\\"";
+
+        System.out.println("To jest ścieżka Windows: "+s);
+        System.out.println("To jest string Java: \\"+s1);
+
     }
 }
 
