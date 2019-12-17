@@ -24,6 +24,14 @@ public class Solution {
         this.culture=culture;
         this.century=century;
     }
+    public static class Osoba {
+        public int wiek = 20;
+
+        public void dostosujWiek(int wiek) {
+            wiek = wiek + 20;
+            System.out.println("Wiek w dostosujWiek() to " + wiek);
+        }
+    }
 
     public static void main(String[] args) {
         print4("okno");
@@ -43,6 +51,11 @@ public class Solution {
 
         System.out.println("To jest ścieżka Windows: "+s);
         System.out.println("To jest string Java: \\"+s1);
+
+        Osoba osoba = new Osoba();
+        System.out.println("Wiek: " + osoba.wiek);
+        osoba.dostosujWiek(osoba.wiek);
+        System.out.println("Dostosowany wiek: " + osoba.wiek);
 
     }
 }

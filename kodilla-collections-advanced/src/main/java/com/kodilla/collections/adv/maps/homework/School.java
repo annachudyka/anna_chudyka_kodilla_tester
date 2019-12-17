@@ -9,9 +9,6 @@ public class School {
 
     private List<Integer>students=new ArrayList<>();
 
-    public School(String name){
-        this.name=name;
-    }
     public School(String name, int ...students) {
         this.name=name;
         for(int student:students)
