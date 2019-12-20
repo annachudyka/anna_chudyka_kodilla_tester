@@ -29,7 +29,17 @@ public class Solution {
 
         public void dostosujWiek(int wiek) {
             wiek = wiek + 20;
+            this.wiek=wiek;
             System.out.println("Wiek w dostosujWiek() to " + wiek);
+        }
+    }
+    public static class Jablko{
+
+        public static int cenaJablek=0;
+
+        public static void podniesCene(int cenaJablek){
+
+            Jablko.cenaJablek+=cenaJablek;
         }
     }
 
@@ -56,6 +66,29 @@ public class Solution {
         System.out.println("Wiek: " + osoba.wiek);
         osoba.dostosujWiek(osoba.wiek);
         System.out.println("Dostosowany wiek: " + osoba.wiek);
+
+        String name="Michael";
+        String name1="Michael";
+
+        if(name.length()==name1.length()){
+            System.out.println("Imiona są tej samej długości");
+        }else{
+            System.out.println("Imiona są różnej długości");
+        }
+        if(name.equals(name1)){
+            System.out.println("Imiona są identyczne");
+        }else{
+            System.out.println("Imiona są różne");
+        }
+
+        Jablko jablko=new Jablko();
+        jablko.podniesCene(50);
+        Jablko.podniesCene(100);
+        System.out.println("Koszt jabłek to "+Jablko.cenaJablek);
+
+        int number=1234;
+        int numberLength=String.valueOf(number).length();
+        System.out.println(numberLength);
 
     }
 }

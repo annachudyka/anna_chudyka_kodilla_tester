@@ -20,7 +20,7 @@ public class Ford implements Car {
     }
     @Override
     public void increaseSpeed() {
-        speed+=20;
+        speed+=20;//spead = spead+ 20;
         System.out.println(this.speed);//metoda nic nie zwraca dlatego wyświetlamy poprzez odwołanie się
         //do zmiennej klasy - speed
     }

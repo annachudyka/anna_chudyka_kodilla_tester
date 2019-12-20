@@ -9,7 +9,7 @@ public class CarRace {
         Suzuki suzuki=new Suzuki(100);
         doRace(suzuki);
     }
-    private static void doRace(Car car){
+    private static void doRace(Car car){//metoda wywołująca
         car.increaseSpeed();
         car.increaseSpeed();
         car.increaseSpeed();
